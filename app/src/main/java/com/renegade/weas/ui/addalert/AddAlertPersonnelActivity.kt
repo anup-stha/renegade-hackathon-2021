@@ -2,6 +2,7 @@ package com.renegade.weas.ui.addalert
 
 import android.os.Bundle
 import android.view.LayoutInflater
+import android.view.MenuItem
 import android.view.View
 import android.widget.Toast
 import androidx.activity.viewModels
@@ -38,6 +39,9 @@ class AddAlertPersonnelActivity : AppCompatActivity() {
         binding.addAlertFAB.setOnClickListener {
             promptUserToAddAlertPersonnel()
         }
+
+        supportActionBar?.title = "Your Alert Personnels"
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
     }
 
@@ -101,6 +105,13 @@ class AddAlertPersonnelActivity : AppCompatActivity() {
             }
         }
 
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (item.itemId == android.R.id.home){
+            super.onBackPressed()
+        }
+        return super.onOptionsItemSelected(item)
     }
 
 

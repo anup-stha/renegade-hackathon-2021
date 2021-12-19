@@ -3,12 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="250dp">
+    android:layout_margin="12dp"
+    android:layout_height="wrap_content">
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/alert_grp_card"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
 
         app:cardBackgroundColor="#F1F1F1"
         app:cardCornerRadius="15dp"
@@ -26,7 +27,6 @@
                 android:id="@+id/name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
                 android:padding="10dp"
                 android:textSize="20sp"
                 tools:layout_editor_absoluteX="92dp"
@@ -36,7 +36,6 @@
                 android:id="@+id/relationship"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
                 android:padding="10dp"
 
                 android:textSize="20sp" />
@@ -45,7 +44,6 @@
                 android:id="@+id/email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
                 android:padding="10dp"
                 android:textSize="20sp" />
 
@@ -53,12 +51,8 @@
                 android:id="@+id/phone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
                 android:padding="10dp"
-                android:textSize="20sp"
-                tools:layout_editor_absoluteX="94dp"
-                tools:layout_editor_absoluteY="182dp" />
-
+                android:textSize="20sp" />
         </LinearLayout>
 
 
