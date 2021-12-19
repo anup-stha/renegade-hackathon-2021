@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/alert_grp_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        app:cardBackgroundColor="#F1F1F1"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            >
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="70"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:padding="10dp"
+    >
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="TextView"
+        android:textSize="20dp"
+        android:padding="10dp"
+       android:layout_marginBottom="20dp"
+                tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="45dp" />
+
+    <TextView
+        android:id="@+id/relationship"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="TextView"
+        android:textSize="20dp"
+        android:layout_marginBottom="20dp"
+
+        android:padding="10dp"
+        tools:layout_editor_absoluteX="89dp"
+        tools:layout_editor_absoluteY="92dp" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="TextView"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"
+
+        tools:layout_editor_absoluteX="96dp"
+        tools:layout_editor_absoluteY="141dp" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="TextView"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"
+
+        tools:layout_editor_absoluteX="94dp"
+        tools:layout_editor_absoluteY="182dp" />
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="30"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        >
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteX="251dp"
+                tools:layout_editor_absoluteY="40dp"
+                tools:srcCompat="@tools:sample/avatars" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/add_more"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="15dp"
+            android:paddingVertical="16dp"
+            android:text="ADD" />
+    </LinearLayout>
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
