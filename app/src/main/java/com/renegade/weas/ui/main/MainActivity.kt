@@ -16,6 +16,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.renegade.weas.R
 import com.renegade.weas.databinding.ActivityMainBinding
 import com.renegade.weas.network.safeapicall.Resource
+import com.renegade.weas.ui.addalert.AddAlertPersonnelActivity
 import com.renegade.weas.ui.login.LoginActivity
 import com.renegade.weas.ui.takesurvey.TakeSurveyActivity
 import com.renegade.weas.utils.permission.IOnPermissionAllowed
@@ -78,7 +79,9 @@ class MainActivity : AppCompatActivity(), IOnPermissionAllowed {
 
 
         viewModel.doesAccessTokenExists()
-
+        binding.mainActAddalertBtn.setOnClickListener{
+            startActivity(Intent(this, AddAlertPersonnelActivity::class.java))
+        }
 
     }
 
